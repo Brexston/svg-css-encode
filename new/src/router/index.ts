@@ -8,10 +8,10 @@ const routes: RouteRecordRaw[] = [
         name: 'MainLayout' as string,
         component: () => import('@/components/layouts/MainLayout.vue'),
     },
-    // {
-    //     path: '/:lang',
-    //     component: () => import("@/components/layouts/MainLayout.vue"),
-    // }
+    {
+        path: '/:lang',
+        component: () => import("@/components/layouts/MainLayout.vue"),
+    }
 ]
 
 

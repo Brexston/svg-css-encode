@@ -1,9 +1,10 @@
 export type TranslateState = {
 	translations: Language[],
+	currentTranslation: Language,
     currentLanguage: string,
 };
 
-type Language = {
+export type Language = {
     languageCode: string;
     tooltip: string;
     title: string;
@@ -21,4 +22,9 @@ type Language = {
     removeSemicolon: string;
     useShortRecording: string;
     save: string;   
+}
+
+export type Translate = {
+    default: string, 
+    code: string
 }
